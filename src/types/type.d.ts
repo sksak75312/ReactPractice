@@ -1,0 +1,1 @@
+type EditingIndex = number | null;
