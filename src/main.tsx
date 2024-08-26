@@ -9,6 +9,14 @@ const theme = createTheme({
   typography: {
     fontFamily: "Noto Serif TC, serif",
   },
+  palette: {
+    primary: {
+      light: '#E9DB5D',
+      main: '#E3D026',
+      dark: '#A29415',
+      contrastText: '#242105',
+    },
+  },
 })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

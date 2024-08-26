@@ -1,0 +1,32 @@
+.container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.list {
+  display: none;
+  
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.125rem;
+  }
+
+  &-item {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: yellow;
+    }
+  }
+}
+
+.burger {
+  @media (min-width: 768px) {
+    display: none !important;
+  }
+}
