@@ -16,6 +16,11 @@ const navbarData = [
     path: '/mealsystem',
     name: 'MealSystem',
   },
+  {
+    id: crypto.randomUUID(),
+    path: '/drinksystem',
+    name: 'DrinkSystem'
+  }
 ];
 
 function Header() {
@@ -25,7 +30,7 @@ function Header() {
     setIsOpen(pre => !pre)
   }
   return (
-    <Box style={{ backgroundColor: '#2196f3' }}>
+    <Box component="header" style={{ backgroundColor: '#2196f3' }}>
       <Container className={styles['container']}>
         <ul className={styles['list']}>
           {navbarData.map((data) => (
